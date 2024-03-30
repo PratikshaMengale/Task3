@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure full viewport height */
+            flex-direction: column; /* Align items in a column */
+        }
+        h3 {
+            font-size: 30px; /* Adjust size as needed */
+        }
+
+        button {
+            font-size: 30px; /* Adjust size as needed */
+        }
+
+        #message {
+            font-size: 30px; /* Adjust size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>JavaScript Alert</h3>
+
+        <button onclick="showAlert()">Hire Me!</button><br>
+        <br>
+        <br>
+        <div id="message">Initial message</div>
+        <br>
+        <button onclick="updateMessage()">Update Message</button>
+    </div>
+
+    <script>
+        // Function to display an alert
+        function showAlert() {
+            alert("Hello, Please fill the form below.");
+        }
+
+        // Function to update the content of an HTML element
+        function updateMessage() {
+            var messageElement = document.getElementById("message");
+            messageElement.innerHTML = "Updated message";
+        }
+    </script>
+</body>
+</html>
